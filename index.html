@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meta Tag & OG Preview Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Meta Tag & Open Graph Preview Tool</h1>
+
+    <form id="metaForm">
+      <label>Title:
+        <input type="text" id="title" placeholder="Page Title" />
+      </label>
+
+      <label>Description:
+        <textarea id="description" placeholder="Page description..."></textarea>
+      </label>
+
+      <label>URL:
+        <input type="url" id="url" placeholder="https://example.com" />
+      </label>
+
+      <label>Image URL:
+        <input type="url" id="image" placeholder="https://example.com/og-image.jpg" />
+      </label>
+
+      <button type="button" onclick="generatePreview()">Generate Preview</button>
+    </form>
+
+    <div class="preview" id="preview">
+      <h2>Live Preview</h2>
+      <div class="og-card">
+        <img id="og-image" src="" alt="OG Image" />
+        <div class="og-text">
+          <p class="og-title" id="og-title">Your Title</p>
+          <p class="og-desc" id="og-desc">Your description will show here.</p>
+          <a class="og-url" id="og-url" href="#">https://yourdomain.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
