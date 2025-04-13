@@ -240,7 +240,7 @@ if (!self.__WB_pmw) {
             i.prototype._send = function(t) {
                 var e = t.getEncodedLogEvent()
                   , n = new this._window.Image;
-                n.src = "//web.archive.org/web/20240418011343/https://log.olark.com/jslog/log.png?" + e,
+                n.src = "https://log.olark.com/jslog/log.png?" + e,
                 n.onload = function() {
                     n = null
                 }
